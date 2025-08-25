@@ -36,21 +36,21 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 animate-slide-up bg-white/95 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-border/20">
+        <div className="max-w-4xl mx-auto space-y-8 animate-slide-up bg-background/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">AI-Powered Financial Learning Platform</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 border border-gold/30">
+            <Sparkles className="w-4 h-4 text-gold" />
+            <span className="text-sm font-medium text-gold">AI-Powered Financial Learning Platform</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Finova</span>
-            <span className="block mt-2 text-gray-900">Learn. Simulate. Mentor.</span>
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent drop-shadow-sm">Finova</span>
+            <span className="block mt-2 text-foreground drop-shadow-sm">Learn. Simulate. Mentor.</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto font-medium">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-medium">
             Master finance with AI-powered tutors, simulated trading, and gamified learning experiences.
           </p>
 
