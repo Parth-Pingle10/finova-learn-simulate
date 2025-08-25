@@ -36,21 +36,21 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 animate-slide-up">
+        <div className="max-w-4xl mx-auto space-y-8 animate-slide-up bg-background/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 border border-gold/30">
             <Sparkles className="w-4 h-4 text-gold" />
             <span className="text-sm font-medium text-gold">AI-Powered Financial Learning Platform</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="text-gradient-primary">Finova</span>
-            <span className="block mt-2 text-foreground">Learn. Simulate. Mentor.</span>
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent drop-shadow-sm">Finova</span>
+            <span className="block mt-2 text-foreground drop-shadow-sm">Learn. Simulate. Mentor.</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-medium">
             Master finance with AI-powered tutors, simulated trading, and gamified learning experiences.
           </p>
 
@@ -82,13 +82,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Animated Coins */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-4 z-10">
-        <div className="w-12 h-12 bg-gradient-gold rounded-full animate-coin-spin shadow-gold" />
-        <div className="w-12 h-12 bg-gradient-gold rounded-full animate-coin-spin shadow-gold" style={{ animationDelay: '0.5s' }} />
-        <div className="w-12 h-12 bg-gradient-gold rounded-full animate-coin-spin shadow-gold" style={{ animationDelay: '1s' }} />
       </div>
     </section>
   );
