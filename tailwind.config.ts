@@ -135,6 +135,26 @@ export default {
 				pulse: {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.5' }
+				},
+				gradientShift: {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' }
+				},
+				particle: {
+					'0%': { 
+						transform: 'translateY(0px) translateX(0px)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': { 
+						transform: 'translateY(-100vh) translateX(100px)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
@@ -144,7 +164,9 @@ export default {
 				'slide-up': 'slideUp 0.5s ease-out',
 				'coin-spin': 'coinSpin 2s linear infinite',
 				'shimmer': 'shimmer 2s infinite',
-				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'gradient-shift': 'gradientShift 8s ease infinite',
+				'particle': 'particle 20s linear infinite'
 			}
 		}
 	},

@@ -60,7 +60,12 @@
     --gradient-secondary: linear-gradient(135deg, hsl(174, 83%, 45%), hsl(174, 83%, 55%));
     --gradient-success: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
     --gradient-gold: linear-gradient(135deg, hsl(45, 93%, 58%), hsl(45, 93%, 68%));
-    --gradient-hero: linear-gradient(180deg, hsl(217, 91%, 35%) 0%, hsl(174, 83%, 45%) 100%);
+    --gradient-hero: linear-gradient(-45deg, 
+      hsl(217, 91%, 35%) 0%, 
+      hsl(174, 83%, 45%) 25%, 
+      hsl(142, 71%, 45%) 50%, 
+      hsl(45, 93%, 58%) 75%, 
+      hsl(217, 91%, 35%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 25%, 97%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(217, 33%, 17%) 0%, hsl(217, 33%, 27%) 100%);
     

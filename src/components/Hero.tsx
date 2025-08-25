@@ -1,27 +1,37 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-background.jpg";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background/80" />
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-hero animate-gradient-shift" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/90" />
       </div>
 
-      {/* Floating Elements */}
+      {/* Animated Particles */}
+      <div className="absolute inset-0 z-5">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-primary/30 rounded-full animate-particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+              animationDuration: `${15 + Math.random() * 20}s`
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Floating Orbs */}
       <div className="absolute inset-0 z-10">
-        <div className="absolute top-20 left-20 w-24 h-24 bg-gold/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-20 w-32 h-32 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-10 w-20 h-20 bg-primary/20 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-20 left-20 w-40 h-40 bg-primary/30 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-20 w-60 h-60 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-10 w-32 h-32 bg-gold/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-1/3 right-1/4 w-48 h-48 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '6s' }} />
       </div>
 
       {/* Content */}
