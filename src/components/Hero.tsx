@@ -46,7 +46,7 @@ export default function Hero() {
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent drop-shadow-sm">Finova</span>
-            <span className="block mt-2 text-foreground drop-shadow-sm">Learn. Simulate. Mentor.</span>
+            <span className="block mt-2 text-foreground drop-shadow-sm">Learn. Simulate. Grow.</span>
           </h1>
 
           {/* Subheadline */}
