@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PurseSystem from "@/components/PurseSystem";
 import AITutors from "@/components/AITutors";
@@ -13,15 +14,32 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Hero />
+      <Navbar />
+      <div id="home">
+        <Hero />
+      </div>
       <PurseSystem />
-      <AITutors />
-      <SimulatedTrading />
-      <Challenges />
-      <FinanceCorner />
-      <BloggerSpace />
-      <GamifiedEcosystem />
-      <CommunitySection />
+      <div id="tutors">
+        <AITutors />
+      </div>
+      <div id="trading">
+        <SimulatedTrading />
+      </div>
+      <div id="challenges">
+        <Challenges />
+      </div>
+      <div id="finance">
+        <FinanceCorner />
+      </div>
+      <div id="blog">
+        <BloggerSpace />
+      </div>
+      <div id="dashboard">
+        <GamifiedEcosystem />
+      </div>
+      <div id="community">
+        <CommunitySection />
+      </div>
       <FinalCTA />
       <Footer />
     </div>
